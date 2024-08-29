@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        .container{
+            width:60vw;
+            height: 50vh;
+            background-color: blue;
+
+            position: absolute;
+           left:20%;
+           top:20%;
+           
+
+        }
+        .margin{
+            width:50vw;
+            height: 30vh;
+            background-color: lightblue;
+            position: relative;
+            top:20%;
+            left:10%;
+        }
+        .border{
+            width:45vw;
+            height: 20vh;
+            background-color:blueviolet;
+            position: relative;
+            top:20%;
+            left:6%;
+        }
+        .padding{
+            width:40vw;
+            height: 10vh;
+            background-color:aqua;
+            position: relative;
+            top:20%;
+            left:4%;
+        }
+        .content{
+            width:35vw;
+            height: 5vh;
+            background-color:orange;
+            position: relative;
+            top:24%;
+            left:5%;
+        }
+        .top{
+            position: absolute;
+            top:5%;
+            left: 50%;
+            font-size: 120%;
+        }
+        .left{
+        
+            position: absolute;
+            top:120px;
+            left: 20px;
+            font-size: 120%;
+        }
+       .right{
+        position: absolute;
+            top:35%;
+            left: 94%;
+            font-size: 120%;
+            z-index: 2;
+       }
+       .bottom{
+        position: absolute;
+            top:80%;
+            left: 30%;
+            font-size: 120%;
+           /* z-index: 2; */
+       }
+       .headmargin{
+        position:absolute;
+        font-size: 120%;
+       }
+       .headborder{
+        position:absolute;
+        font-size: 120%;
+        top:-9%
+       }
+       .headpadding{
+        position:absolute;
+        font-size: 70%;
+        top:-9%
+       }
+        .headcontent{
+            position:absolute;
+        font-size: 100%;
+        top:-19% ; 
+        left:40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" ><p  class="top">top</p>
+        <p class="left">left</p>
+        <p class="right">right</p>
+        <p class="bottom">bottom</p>
+        <div class="margin"><p class="headmargin">margin</p>
+            <div class="border"><p class="headborder">border</p>
+                <div class="padding"><p class="headpadding">padding</p>
+                    <div class="content"><p class="headcontent">content</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+   
+    
+</body>
+</html>
